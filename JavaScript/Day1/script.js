@@ -17,6 +17,15 @@ console.error("Welcome to JavaScript");
 console.warn("Welcome to JavaScript");
 console.clear();
 
+// Ways of creating a variable
 let favouriteMeal = "pizza";
 const number = 5;
 var happyPlace = "Beach";
+
+
+if (favouriteMeal == "pizza") {
+    favouriteMeal = "yes";
+    console.log(favouriteMeal)
+}
+
+console.log(number * 5);
