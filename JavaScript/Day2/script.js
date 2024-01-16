@@ -78,3 +78,13 @@ console.log(2 * '2');  //4
 console.log('10' / 2); //5
 console.log('10' % 2); //0
 console.log(true * 7); //7
+
+let lang = "JavaScript";
+
+//String in JavaScript
+let firstMessage = "Welcome to JavaScript";
+let secondMessage = 'Welcome to JavaScript';
+let thirdMessage = `Welcome to ${lang}`; //string interpolation
+console.log(firstMessage);
+console.log(secondMessage);
+console.log(thirdMessage);
