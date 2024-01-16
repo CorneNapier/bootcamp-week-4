@@ -23,4 +23,14 @@ whereas null is an assignment value, meaning that a variable has been declared a
 given the value of null */
 
 let num2 = 1484718734817047170941847n; //n at the end of the number makes it a big integer(bigInt)
-console.log(typeof num2)
+console.log(typeof num2);
+
+// task - search on type conversion in JS
+
+/* Answer: 
+Converting Strings to Numbers
+Converting Numbers to Strings
+Converting Dates to Numbers
+Converting Numbers to Dates
+Converting Booleans to Numbers
+Converting Numbers to Booleans */
