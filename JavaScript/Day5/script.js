@@ -99,4 +99,48 @@ let multiply = (x, y) => x * y;
 3: Write a cash machine / atm function that takes in a withdrawal amount and a pin number as an argument and compares the pin and withdrawal amount against a stored pin and account balance. If the pin matches and the balance is sufficient approve the transaction, if not decline the transaction.
 */
 
+//!Task1
 
+// function greeting2(firstName, lastName) {
+//     firstName = prompt("Please enter your first name");
+//     lastName = prompt("Please enter your last name");
+//     alert(`Hello ${firstName} ${lastName}, how are you?`);
+// }
+
+let greeting2 = (firstName, lastName) => {firstName = prompt("Please enter your first name");
+lastName = prompt("Please enter your last name");
+alert(`Hello ${firstName} ${lastName}, how are you?`);}
+
+greeting2();
+
+//!Task 2
+let sortAlphabets = text => text = prompt("Enter text to be sorted").split('').sort().join('');
+
+alert(sortAlphabets());
+
+//!Task 3
+// function atm2 (withdrawalAmount, pinNumber ) {
+//     let accountBalance = 5000;
+//     pinNumber = prompt ("Please enter your pin.");
+//     withdrawalAmount = prompt("Please enter how much you would like to withdraw.");
+
+//     if (pinNumber === "1234" && withdrawalAmount <= accountBalance && withdrawalAmount <= 250) {
+//         alert(`Withdrawal of ${withdrawalAmount} approved!`)
+//     } else {
+//         alert(`Transaction has been declined!`);
+//     }
+
+// }
+
+let atm2 = (withdrawalAmount, pinNumber) => {let accountBalance = 5000;
+    pinNumber = prompt ("Please enter your pin.");
+    withdrawalAmount = prompt("Please enter how much you would like to withdraw.");
+
+    if (pinNumber === "1234" && withdrawalAmount <= accountBalance && withdrawalAmount <= 250) {
+        alert(`Withdrawal of £${withdrawalAmount} approved!`)
+    } else {
+        alert(`Transaction has been declined!`);
+    } 
+}
+
+atm2();
