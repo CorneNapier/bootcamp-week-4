@@ -132,7 +132,7 @@ alert(sortAlphabets());
 
 // }
 
-let atm2 = (withdrawalAmount, pinNumber) => {let accountBalance = 5000;
+let atm2 = (withdrawalAmount, pinNumber) => {let accountBalance = 50;
     pinNumber = prompt ("Please enter your pin.");
     withdrawalAmount = prompt("Please enter how much you would like to withdraw.");
 
@@ -140,9 +140,11 @@ let atm2 = (withdrawalAmount, pinNumber) => {let accountBalance = 5000;
         alert(`Withdrawal of £${withdrawalAmount} approved!`)
         alert(`Remaining balance: ${accountBalance - withdrawalAmount}.00.`)
     } else if (pinNumber !== "1234") {
-        alert(`Pin is incorrect, transaction denied`)
+        alert(`Pin is incorrect, transaction has been declined`)
     } else if (withdrawalAmount > 250) {
-        alert(`Transaction denied. You can't withdraw more than £250.`)      
+        alert(`Transaction has been declined! You can't withdraw more than £250.`)      
+    } else if (withdrawalAmount > accountBalance) {
+      alert(`Transaction has been declined! Insufficient funds.`)
     } else {
         alert(`Transaction has been declined!`);
     } 
