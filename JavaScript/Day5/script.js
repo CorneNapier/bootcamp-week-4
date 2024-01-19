@@ -138,6 +138,11 @@ let atm2 = (withdrawalAmount, pinNumber) => {let accountBalance = 5000;
 
     if (pinNumber === "1234" && withdrawalAmount <= accountBalance && withdrawalAmount <= 250) {
         alert(`Withdrawal of £${withdrawalAmount} approved!`)
+        alert(`Remaining balance: ${accountBalance - withdrawalAmount}.00.`)
+    } else if (pinNumber !== "1234") {
+        alert(`Pin is incorrect, transaction denied`)
+    } else if (withdrawalAmount > 250) {
+        alert(`Transaction denied. You can't withdraw more than £250.`)      
     } else {
         alert(`Transaction has been declined!`);
     } 
